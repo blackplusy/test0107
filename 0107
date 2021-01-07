@@ -182,8 +182,14 @@ e.安全测试     40w/年   3年
 		字符、日期类型必须要加单引号
 		数值类型直接使用
 		1>向表中所有列新增数据
-			
+			语法:insert into 表 values(值1,值2....);
+			需求:向goods表中新增数据，商品名称simida,价格250，出厂日期 2000-01-01
+				insert into goods values('simida',250,'2000-01-01');
 		2>向表中指定列新增数据
+			语法:insert into 表(列1,列2) values(值1,值2);
+			需求:向goods表中新增数据，商品名称o8ma,价格1000
+				insert into goods(name,price) values('o8ma',1000);
+				
 
 
 

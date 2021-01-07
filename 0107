@@ -1,0 +1,77 @@
+a.功能(点点点)    8-11k
+	web基础(协议、抓包)
+	数据库(mysql、mongodb、redis)
+	操作系统(linux)
+	测试理论
+b.游戏测试        6-16k
+	游戏测试理论
+c.自动化测试      13k
+	python   java  php  c# .....
+	selenium  web自动化测试框架
+	pytest    接口自动化测试框架
+	appium    app自动化测试框架
+d.性能测试   18k
+	软件
+	硬件
+	存储
+	网络
+	数据库
+	web服务器
+	业务
+e.安全测试     40w/年   3年
+	安全测试理论
+	安全测试工具(kali) 
+
+==============================================
+1.http协议
+	超文本传输协议(规定了数据先传输什么后传输什么，怎样传输)
+	超文本(声音、图像、视频)
+2.http协议的特点
+	无状态(彼此不记录过去的行为)
+3.http协议的请求
+	get  请求的信息显示在URL上，相对不安全
+		https://s.taobao.com/search?q=zara&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306
+
+		https://s.taobao.com/search?q=lv&imgfile=&js=1&stats_click=search_radio_all%3A1&initiative_id=staobaoz_20210107&ie=utf8
+	post  请求的信息显示在请求体中，相对安全
+4.cookie&session
+	cookie  访问记录、验证机制   定投广告
+	session 验证机制           会话保持  30分钟超时
+5.状态码
+	200   2开头请求成功
+	302   3开头移动或者缓存
+	404   4开头客户端请求有问题
+	500   5开头服务端有问题
+6.抓包
+	a.常用抓包工具
+		F12
+		httpwatch
+		fiddler
+		wireshark
+		burpsuite
+	b.抓包实例
+	c.抓包原理
+		中间人原理
+	d.抓包数据
+		http://ecshop.test1.shopex123.com/
+		0>基础信息
+			名字
+			状态码
+			文件类型
+			参考页面
+			文件大小
+			加载时间
+		1>请求头
+			请求地址
+			请求方式
+			可以解析的文件类型
+			除文本外文件压缩方式
+			语言
+			cookie
+			客户端信息
+		2>请求体
+		3>响应头
+			状态码
+			时间
+			服务器软件
+		4>响应体

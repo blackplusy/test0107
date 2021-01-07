@@ -75,3 +75,53 @@ e.安全测试     40w/年   3年
 			时间
 			服务器软件
 		4>响应体
+===================================================
+1.ecshop项目部署
+	a.项目的组成
+		开发语言：	php
+		web服务器:  apache
+		数据库:     mysql
+	b.集成软件
+		xampp
+			x:任意操作系统
+			a:apache
+			m:mysql
+			p:php
+			p:perl
+		wamp
+			w:windows
+		phpstudy
+	c.phpstudy文件夹简介
+		apache   web服务器所在文件夹
+			bin  存放apache命令的位置
+			conf 存放apache的配置文件的位置
+			logs 存放apache的日志文件的位置
+			httpd.conf apache的配置文件
+		mysql     数据库服务器所在文件夹
+			bin  存放mysql命令的位置
+			data 存放mysql数据的位置
+			my.ini  mysql的配置文件
+		WWW       项目代码存放的位置
+	d.安装部署phpstudy
+		安装:傻瓜安装
+		1>检查服务和端口
+			apache  主服务 httpd   端口 80
+			mysql   主服务 mysqld  端口 3306
+			win+r--cmd(打开命令提示符)--tasklist | find "mysqld"
+				tasklist 当前运行的所有进程
+				|        管道，前面的输出作为后面的输入
+			win+r--cmd(打开命令提示符)--netstat -an | find "3306"
+				netstat -an 当前系统开放的所有端口
+			0.0.0.0  任意IP
+			127.0.0.1==localhost  电脑本机
+		2>解压ecshop压缩包，把解压后的ecshop1复制到WWW文件夹中
+		3>浏览器中输入127.0.0.1/ecshop1按照提示安装
+			配置系统
+			数据库主机  localhost
+			端口号      3306
+			用户名      root
+			密码        root
+			数据库名    test
+
+
+

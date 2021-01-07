@@ -122,6 +122,47 @@ e.安全测试     40w/年   3年
 			用户名      root
 			密码        root
 			数据库名    test
+2.数据库
+	a.关系型数据库
+		oracle        中大型企业
+		mysql         互联网公司
+		sqlserver     传统类型公司
+	b.非关系型数据库
+		mongodb       大数据
+		redis         消息队列
+		cassandra     facebook
+	c.mysql基础
+		1>mysql的服务
+			mysql     mysql的客户端服务
+			mysqld    mysql的服务端服务
+		2>检查服务和端口
+			netstat -an | find "3306"
+			tasklist | find "mysqld"
+		3>mysql的登录命令(命令提示符里面)
+			mysql
+				登录本地数据库
+			mysql -u root -p
+				管理员登录本地数据库
+			mysql -h 127.0.0.1 -u root -p
+				管理员登录IP为127.0.0.1的数据库
+		4>基础命令
+			常说的数据库分为2部分，数据库软件，数据库数据
+			数据库是由表组成，表是由数据组成
+			show databases;
+				查看当前数据库的名字
+			select database();
+				查看当前数据库的名字
+			use test;
+				当前数据库切换为test
+			show tables;
+				查看当前数据库中有哪些表
+			select * from ecs_goods;
+				查看ecs_goods表中所有数据
+
+
+
+
+
 
 
 

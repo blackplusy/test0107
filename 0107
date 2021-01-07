@@ -158,6 +158,35 @@ e.安全测试     40w/年   3年
 				查看当前数据库中有哪些表
 			select * from ecs_goods;
 				查看ecs_goods表中所有数据
+	d.表结构
+		1>数据类型
+			字符  'abc' '123' char varchar
+			数值   123        int
+			日期  '2000-01-01' date
+		2>表结构
+			语法:  create table 表名(
+					列  数据类型,
+					列  数据类型
+					);
+			需求:创建表商品(goods),商品名字(name) 字符类型，最多10个字符，价格(price) 数值类型,出厂日期(birth) 日期类型
+				create table goods(
+					name char(10),
+					price  int,
+					birth  date
+				);
+			查看表结构
+			语法： desc 表名;
+			需求:查看goods表表结构
+				desc goods;
+	e.数据的新增
+		字符、日期类型必须要加单引号
+		数值类型直接使用
+		1>向表中所有列新增数据
+			
+		2>向表中指定列新增数据
+
+
+
 
 
 
